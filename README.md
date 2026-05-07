@@ -1,4 +1,6 @@
-# Embedded Lab Task 3 - MQTT + JSON Communication
+# Embedded Lab Task 3 - MQTT + JSON Communication 
+
+**Author:** Shashank Panthangi
 
 Bidirectional MQTT communication between a Raspberry Pi Pico W (Wokwi simulation) 
 and an Arduino Nano 33 IoT (real hardware) using JSON messages over the internet.
