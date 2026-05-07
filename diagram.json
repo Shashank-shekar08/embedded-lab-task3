@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -3.6, "left": 176.6, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 6.2,
+      "left": -144,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -106.9, "left": -0.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GP28", "led1:A", "green", [ "h0" ] ],
+    [ "pico:GND.7", "led1:C", "black", [ "h0" ] ],
+    [ "pico:GP2", "btn1:1.r", "green", [ "h-44.45", "v-22.45" ] ],
+    [ "pico:GND.1", "btn1:2.r", "black", [ "h0" ] ],
+    [ "pico:GP26", "pot1:SIG", "green", [ "h157.46", "v-118.45", "h-192", "v-19.2" ] ],
+    [ "pot1:VCC", "pico:3V3", "red", [ "v9.6", "h66.4", "v86.4" ] ],
+    [ "pico:GND.2", "pot1:GND", "black", [ "h-188.45", "v-99.25", "h211.2" ] ]
+  ],
+  "dependencies": {}
+}
