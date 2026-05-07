@@ -4,7 +4,7 @@ Bidirectional MQTT communication between a Raspberry Pi Pico W (Wokwi simulation
 and an Arduino Nano 33 IoT (real hardware) using JSON messages over the internet.
 
 ## Wokwi Simulation
-[Pico W Simulation](your wokwi link here)
+[Pico W Simulation](https://wokwi.com/projects/463390459928401921)
 
 ## Hardware
 - **Pico W** (Wokwi) — LED on GP28, Button on GP2, Potentiometer on GP26
